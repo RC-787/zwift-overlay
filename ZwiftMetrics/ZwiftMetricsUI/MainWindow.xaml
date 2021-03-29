@@ -1,0 +1,30 @@
+﻿<Window x:Class="ZwiftMetricsUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZwiftMetricsUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="305.333" Width="220"
+        AllowsTransparency="True" 
+        WindowStyle="None"
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        Topmost="True">
+    <Grid>
+        <Image x:Name="BackgroundImage" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="200" Source="Images/Edge520.png" Cursor="SizeAll" MouseLeftButtonDown="BackgroundImage_MouseLeftButtonDown"/>
+        <Button x:Name="Button_Exit" Content="X" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Top" Width="20" FontWeight="Bold" Click="Button_Exit_Click"/>
+        <Label x:Name="Label_LapTime" Content="00:00:00" HorizontalAlignment="Left" Height="27" Margin="27,60,0,0" VerticalAlignment="Top" Width="144" HorizontalContentAlignment="Center" Padding="0" FontSize="22" FontWeight="Bold" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True" Cursor="SizeAll" MouseLeftButtonDown="InvokeDragDropEvent"/>
+        <Button x:Name="Button_Start" Content="" HorizontalAlignment="Left" Height="19" Margin="138,270,0,0" VerticalAlignment="Top" Width="31" Opacity="0" Cursor="Hand" Click="Button_Start_Click"/>
+        <Button x:Name="Button_Restart" Content="" HorizontalAlignment="Left" Height="19" Margin="30,270,0,0" VerticalAlignment="Top" Width="32" Opacity="0" Cursor="Hand" Click="Button_Restart_Click"/>
+        <Label x:Name="Label_Power" Content="0w" HorizontalAlignment="Left" Height="27" Margin="27,99,0,0" VerticalAlignment="Top" Width="144" HorizontalContentAlignment="Center" Padding="0" FontSize="22" FontWeight="Bold" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True" MouseLeftButtonDown="InvokeDragDropEvent" Cursor="SizeAll"/>
+        <Label x:Name="Label_HeartRate" Content="0" HorizontalAlignment="Left" Height="27" Margin="27,139,0,0" VerticalAlignment="Top" Width="144" HorizontalContentAlignment="Center" Padding="0" FontSize="22" FontWeight="Bold" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True" MouseLeftButtonDown="InvokeDragDropEvent" Cursor="SizeAll"/>
+        <TextBlock x:Name="Label_HeartRateUnits" TextWrapping="Wrap" Margin="120,147,93,186" FontSize="6"  LineStackingStrategy="BlockLineHeight" LineHeight="5.5" MouseLeftButtonDown="InvokeDragDropEvent" Cursor="SizeAll">bpm</TextBlock>
+        <Label x:Name="Label_AvgPower" Content="0w" HorizontalAlignment="Left" Height="27" Margin="27,179,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Padding="0" FontSize="22" FontWeight="Bold" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True" MouseLeftButtonDown="InvokeDragDropEvent" Cursor="SizeAll"/>
+        <Label x:Name="Label_MaxPower" Content="0w" HorizontalAlignment="Left" Height="27" Margin="101,179,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Padding="0" FontSize="22" FontWeight="Bold" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True" MouseLeftButtonDown="InvokeDragDropEvent" Cursor="SizeAll"/>
+        <Label x:Name="Label_AvgHR" Content="0" HorizontalAlignment="Left" Height="27" Margin="27,218,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Padding="0" FontSize="22" FontWeight="Bold" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True" MouseLeftButtonDown="InvokeDragDropEvent" Cursor="SizeAll"/>
+        <Label x:Name="Label_MaxHR" Content="0" HorizontalAlignment="Left" Height="27" Margin="101,218,0,0" VerticalAlignment="Top" Width="71" HorizontalContentAlignment="Center" Padding="0" FontSize="22" FontWeight="Bold" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True" MouseLeftButtonDown="InvokeDragDropEvent" Cursor="SizeAll"/>
+        <TextBlock x:Name="Label_HeartRateUnits_Copy" TextWrapping="Wrap" Margin="82,227,131,106" FontSize="6"  LineStackingStrategy="BlockLineHeight" LineHeight="5.5" MouseLeftButtonDown="InvokeDragDropEvent" Cursor="SizeAll"><Run Text="bpm"/></TextBlock>
+        <TextBlock x:Name="Label_HeartRateUnits_Copy1" TextWrapping="Wrap" Margin="157,227,56,106" FontSize="6"  LineStackingStrategy="BlockLineHeight" LineHeight="5.5" MouseLeftButtonDown="InvokeDragDropEvent" Cursor="SizeAll"><Run Text="bpm"/></TextBlock>
+    </Grid>
+</Window>
